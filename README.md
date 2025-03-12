@@ -37,10 +37,10 @@ Inflation, interest rates, and their effects on economic growth and development 
 The dataset for this project consists of publicly available economic indicators that track inflation, interest rates, consumer spending, investment, and stock market trends over time. Here’s what I’ll be analyzing:  
 
 - **Date:** The specific month and year for each recorded data point.  
-- **Inflation (CPI & Core CPI):** Measures the percentage change in consumer prices over time. *(Source: [Bureau of Labor Statistics (BLS)](https://www.bls.gov/cpi/))*  
-- **Interest Rates (Federal Funds Rate):** The key rate set by the Federal Reserve to control inflation. *(Source: [Federal Reserve Economic Data (FRED)](https://fred.stlouisfed.org/))*  
-- **Consumer Spending (PCE & Retail Sales):** Tracks how much households spend on goods and services. *(Source: [Bureau of Economic Analysis (BEA)](https://www.bea.gov/))*  
-- **Investment (Private Fixed Investment & Business Loans):** Measures business spending on capital investments and borrowing trends. *(Source: [FRED / BEA](https://fred.stlouisfed.org/))*  
-- **Stock Market Performance (S&P 500, NASDAQ, Dow Jones):** Examines how inflation and interest rate changes affect stock prices. *(Source: [Yahoo Finance](https://finance.yahoo.com/))*  
+- **Inflation (CPI & Core CPI):** Measures the percentage change in consumer prices over time. *(Source: [Bureau of Labor Statistics (BLS)])*  
+- **Interest Rates (Federal Funds Rate):** The key rate set by the Federal Reserve to control inflation. *(Source: Federal Reserve Economic Data (FRED))*  
+- **Consumer Spending (PCE & Retail Sales):** Tracks how much households spend on goods and services. *(Source: Bureau of Economic Analysis (BEA))*  
+- **Investment (Private Fixed Investment & Business Loans):** Measures business spending on capital investments and borrowing trends. *(Source: FRED / BEA)*  
+- **Stock Market Performance (S&P 500, NASDAQ, Dow Jones):** Examines how inflation and interest rate changes affect stock prices. *(Source: Yahoo Finance)*  
 
-I will collect, clean, and store this data systematically in an **Excel file and Jupyter Notebook** to ensure consistency and accuracy. **Any external economic shocks (e.g., financial crises, pandemics) will be considered as potential outliers and flagged for review.**  
+**Note:** Additionl economic factors (employment, wage, savings) or shocks (financial crises, pandemics) may be considered as potential outliers and flagged for review or they will be integrated into the analysis as data. This is not finalized yet; howvever, I will most likely be integrating those factors such as employment, and savings into the dataset.
