@@ -9,10 +9,10 @@ In this project, I will analyze **how inflation impacts interest rates, consumer
 ## Objectives
 
 1. **Understand Inflation and Interest Rates**  
-   Investigate how inflation influences Federal Reserve decisions on interest rate adjustments.
+   Investigate how inflation influences Federal Reserve decisions on interest rate adjustments. 
    
 2. **Examine the Impact of Inflation on Consumer Spending**  
-   Assess whether rising inflation leads to a decline in household spending using various systems such as CPI (consumer price index). Identify specific sectors where inflation has the strongest impact on consumption behavior.
+   Assess whether rising inflation leads to a decline in household spending using various systems such as CPI (consumer price index).
 
 3. **Evaluate How Inflation Affects Business Investment**  
    Determine whether inflation discourages businesses from making long-term investments as a response.
