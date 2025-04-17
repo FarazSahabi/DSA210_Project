@@ -40,6 +40,6 @@ The dataset for this project consists of publicly available economic indicators 
 - **Interest Rates (Federal Funds Rate):** The key rate set by the Federal Reserve to control inflation. *(Source: Federal Reserve Economic Data (FRED))*  
 - **Consumer Spending (PCE & Retail Sales):** Tracks how much households spend on goods and services. *(Source: Bureau of Economic Analysis (BEA))*  
 - **Investment (Private Fixed Investment & Business Loans):** Measures business spending on capital investments and borrowing trends. *(Source: FRED / BEA)*  
-- **Stock Market Performance (S&P 500, NASDAQ, Dow Jones):** Examines how inflation and interest rate changes affect stock prices. *(Source: Yahoo Finance)*  
-
-**Note:** Additionl economic factors (employment, wage, savings) or shocks (financial crises, pandemics) may be considered as potential outliers and flagged for review or they will be integrated into the analysis as data. This is not finalized yet; howvever, I will most likely be integrating those factors such as employment, and savings into the dataset.
+- **Stock Market Performance (S&P 500, NASDAQ, Dow Jones):** Examines how inflation and interest rate changes affect stock prices. *(Source: Yahoo Finance)*
+- **Wages (average monthly/hourly earnings):**
+- **Unemployment Rate:** 
