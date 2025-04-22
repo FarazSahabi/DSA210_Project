@@ -14,13 +14,16 @@ In this project, I will analyze **how inflation impacts interest rates, consumer
 2. **Examine the Impact of Inflation on Consumer Spending**  
    Assess whether rising inflation leads to a decline in household spending using various systems such as CPI (consumer price index).
 
-3. **Evaluate How Inflation Affects Business Investment**  
+3. **Evaluate how Inflation Affects Business Investment**  
    Determine whether inflation discourages businesses from making long-term investments as a response.
 
-4. **Assess the Stock Market's Reaction to Inflation**  
-   As a side topic which is slightly dependent on more endogenous factors as compared to the rest, I will identify whether inflation or interest rate changes have a greater effect on stock performance through supply and demand. Therefore, for this data I will consider some more factors.
+4. **Integrate and Take Other Factors in Account**  
+   Since economy is very vast and does not just depend on few factors, I will compare the CPI inflation data with other factors such as wages, savings rate, and unemployment rate.
 
-5. **Provide Data-Driven Insights for Economic Trends**  
+5. **Round Up and Point Out Indirect Effect To GDP**  
+   Finally after plotting all the data, understand and analyze the bigger effect inflation will have in the economy, as in towards the GDP, which is biggest indicator of economic performance.
+
+6. **Provide Data-Driven Insights for Economic Trends**  
    Use historical data to track patterns in economic recessions and expansions and use the data science concepts I have learned in DSA210 to analyze and visualize the data.
    
 ---
@@ -38,10 +41,10 @@ The dataset for this project consists of publicly available economic indicators 
 - **Date:** The specific month and year for each recorded data point.  
 
 - **Inflation (CPI):** Measures the percentage change in consumer prices over time.  
-  *(Source: U.S. Bureau of Economic Analysis via FRED)*
+  *(Source: U.S. Bureau of Labor Statistics via FRED)*
 
 - **Interest Rates (Federal Funds Rate):** The key interest rate set by the Federal Reserve to manage inflation and stabilize the economy.  
-  *(Source: U.S. Bureau of Economic Analysis via FRED)*
+  *(Source: Board of Governors of the Federal Reserve System (US) via FRED )*
 
 - **Consumer Spending (PCE):** Measures the total value of goods and services consumed by households, reflecting behavioral responses to inflation and rate changes.  
   *(Source: U.S. Bureau of Economic Analysis via FRED)*
