@@ -38,7 +38,9 @@ Inflation, interest rates, and their effects on economic growth and development 
 
 The dataset for this project consists of publicly available economic indicators that track inflation, interest rates, consumer spending, investment, etc. over time. All data will be taken from the **Federal Reserve Economic Data (FRED)**, a publicly accessible database maintained by the **Federal Reserve Bank of St. Louis** which provides accurate, up-to-date U.S. economic time series data. Here’s what I’ll be analyzing:  
 
-- **Date:** The specific month and year for each recorded data point.  
+- **Date:** The specific month and year for each recorded data point.
+
+- **Recession Periods:** The specific time periods of U.S. recessions that took place that were influential in economic shifts.
 
 - **Inflation (CPI):** Measures the percentage change in consumer prices over time.  
   *(Source: U.S. Bureau of Labor Statistics via FRED)*
