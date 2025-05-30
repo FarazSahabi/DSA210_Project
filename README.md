@@ -112,11 +112,56 @@ All datasets merged on date index.
 
 ## Findings
 
--  **Strong positive correlation** between CPI and both **Consumer Spending (PCE)** and **Investment (GPDI)**.
--  **Negative correlation** observed between CPI and **Unemployment** (as expected).
--  Wages grew faster than CPI, but not significantly — no meaningful gap detected in wage vs inflation growth.
--  **Linear Regression** predicted CPI moderately well (R² ≈ 0.40).
--  **Random Forest** and **KNN** performed poorly, yielding negative R² due to small test set and noisy target.
+### EDA Graphs
+
+- **CPI vs Federal Funds Rate**  
+  - No consistent pattern observed. In some periods, interest rates rose with inflation, while in others they lagged behind.
+  - The Fed’s response to inflation appears more reactive than directly proportional.
+
+- **CPI vs Wages (Average Hourly Earnings)**  
+  - Both trends show steady increases over time.
+  - Wages often outpaced inflation, but monthly changes were not statistically different.
+
+- **CPI vs Consumer Spending (PCE)**  
+  - Very strong positive relationship.
+  - As inflation rose, consumer spending increased consistently — expected in nominal terms.
+
+- **CPI vs Investment (GPDI) and Personal Savings Rate**  
+  - Investment followed inflation closely with sharp rises, especially during expansion periods.
+  - Savings rate spiked during recessions and dropping during stable periods.
+  - The relationship between inflation and savings was weak compared to investment.
+
+- **Recession Zones**  
+  - All graphs shaded the 2008 Financial Crisis and the 2020 COVID-19 Recession.
+  - These periods clearly disrupted trends across all variables — especially unemployment and savings.
+
+- **Correlation Heatmap**  
+  - CPI showed strong positive correlations with PCE and GPDI.
+  - CPI had a moderate negative correlation with unemployment.
+  - Most variables were positively related, especially GDP and investment.
+
+---
+
+### Hypothesis Testing
+
+  - Spearman correlation confirmed a significant positive relationship between CPI and both consumer spending and investment.
+  - A negative correlation was found between CPI and unemployment.
+  - Although wages grew faster than CPI, a t-test showed no significant difference in monthly % changes.
+
+---
+
+### ML Models
+
+- **Linear Regression**  
+  - Moderate performance with R² ≈ 0.40 — CPI was somewhat predictable using economic indicators.
+  - Model captured trend but missed sharp fluctuations.
+
+- **Random Forest Regression**  
+  - Poor performance (negative R²). Model failed to generalize, likely due to small test size and volatile data.
+
+- **KNN Regression**  
+  - Also failed (negative R²), indicating that macroeconomic patterns are not well-suited to local-distance models like KNN.
+
 
 ---
 
@@ -133,7 +178,7 @@ All datasets merged on date index.
 - Try time-series algorithms (e.g. LSTM, ARIMA).
 - Include oil prices, interest rate expectations, global inflation indices, fiscal policy variables, election periods and so much more.
 
-None of these will get us direct answers but will guide us closer to the actual CPI.
+**Note**: None of these will get us direct answers but will guide us closer to the actual CPI.
 
 ---
 
