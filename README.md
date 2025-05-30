@@ -65,3 +65,78 @@ The dataset for this project consists of publicly available economic indicators 
   
 - **Gross Domestic Product (GDP):** Tracks the total value of goods and services produced in the U.S., serving as a key measure of economic growth and overall economic cycles.  
   *(Source: U.S. Bureau of Economic Analysis via FRED)*
+
+# Final Report
+
+## Introduction
+
+This project investigates how inflation (CPI) influenced key U.S. economic indicators between 2006 and 2025. The main variables analyzed include interest rates, wages, consumer spending, investment, savings rate, unemployment rate, and GDP (gross domestic product) as well as taking factors such as global recessions into consideration. The United States is chosen as the subject of this project due to its wide accessibility of economic data which is unlike any other country. Using real-world economic data from the U.S. Federal Reserve, this case study explores correlations and relationships between economic variables through visualizations, statistical tests, and machine learning models.
+
+---
+
+## Data Analysis
+
+### Dataset Description
+
+Source: All data collected from U.S. Federal Reserve (FRED)
+
+Time Range: April 2006 to October 2024 (per 3 months frequency due to GDP data)
+
+Variables included:
+- **CPI:** Consumer Price Index. A measure of inflation        (CPIAUCNS.csv)
+- **Federal Funds Rate:** Interest rate set by the Federal Reserve              (FEDFUNDS.csv)
+- **Average Hourly Earnings:** Wages for private employees (in dollars/hour)          (CES0500000003.csv)
+- **Unemployment Rate:** Monthly civilian unemployment rate                  (UNRATE.csv)
+- **Personal Savings Rate:** Percentage of disposable income saved                   (PSAVERT.csv)
+- **Consumer Spending (PCE):** Personal consumption expenditures (in billion $)          (PCE.csv)
+- **Investment (GPDI):**  Gross private domestic investment (in billion $)           (GPDI.csv)
+- **GDP:** Real Gross Domestic Product (quarterly, in billion $)       (GDP.csv)
+
+All datasets merged on date index.
+
+### Methodology and Techniques Used
+- **Data Preprocessing**: Merged and aligned macroeconomic datasets from FRED so that they fit in same timeline and frequency.
+- **EDA**: Time-series plots showing CPI alongside other indicators, with recession zones indicated.
+- **Correlation Heatmap**: Used to identify relationships between features.
+- **Hypothesis Testing**: Spearman correlation and t-test.
+- **Machine Learning**: Linear Regression, Random Forest, and K-Nearest Neighbors (KNN) models applied to predict CPI.
+
+### Analysis Stages
+1. Data Cleaning and Formatting  
+2. Visual Trends Analysis (CPI vs each variable)  
+3. Correlation Heatmap  
+4. Hypothesis Testing Results  
+5. Machine Learning Regression Models
+
+---
+
+## Findings
+
+-  **Strong positive correlation** between CPI and both **Consumer Spending (PCE)** and **Investment (GPDI)**.
+-  **Negative correlation** observed between CPI and **Unemployment** (as expected).
+-  Wages grew faster than CPI, but not significantly — no meaningful gap detected in wage vs inflation growth.
+-  **Linear Regression** predicted CPI moderately well (R² ≈ 0.40).
+-  **Random Forest** and **KNN** performed poorly, yielding negative R² due to small test set and noisy target.
+
+---
+
+##  Limitations and Future Work
+
+### Limitations:
+- Time-based split limited test size (~15 rows), causing weak model performance.
+- CPI affected by complex global and local forces not captured in this dataset.
+- 2008 Financial Crisis and 2020 COVID Recession severely disrupted trends and ML models causing some to fail.
+- Economy, specifically inflation, is highly difficult to predict. Even central banks with economic experts get it wrong sometimes. This shows that inflation is not merely dependant on a bunch of factors like interest rate and consumer spending. Many "endogenous" factors like political dynamics and stock market performance play a role.
+
+### Future Improvements:
+- Model % changes or inflation rate instead of raw CPI.
+- Try time-series algorithms (e.g. LSTM, ARIMA).
+- Include oil prices, interest rate expectations, global inflation indices, fiscal policy variables, election periods and so much more.
+
+None of these will get us direct answers but will guide us closer to the actual CPI.
+
+---
+
+## Conclusion
+
+This project confirmed many economic principles such as, CPI rises with consumer demand and investment and falls with unemployment, but also highlighted the **challenges of modeling real-world economic data**. While correlation is often strong, prediction is complex due to policy, shocks, and ,what is known between economists, "endogenous" factors. Nevertheless, this project forms a solid analytical base, with meaningful insights and opportunities for future refinement.
