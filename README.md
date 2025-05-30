@@ -114,45 +114,48 @@ All datasets merged on date index.
 
 ### 1. EDA Graphs
 
-**CPI vs Federal Funds Rate**  
+#### CPI vs Federal Funds Rate
   - No consistent pattern observed. In some periods, interest rates rose with inflation, while in others they lagged behind.
   - The Fed’s response to inflation appears more reactive than directly proportional.
  
 <img width="1010" alt="Image" src="https://github.com/user-attachments/assets/5b8d2092-996c-4a18-87d8-c56daf953985" />
 
-**CPI vs Wages (Average Hourly Earnings)**  
+#### CPI vs Wages (Average Hourly Earnings)
   - Both trends show steady increases over time.
   - Wages often outpaced inflation, but monthly changes were not statistically different.
  
 <img width="1015" alt="Image" src="https://github.com/user-attachments/assets/65571235-c85a-489c-b023-74f7eacf17c7" />
 
-**CPI vs Consumer Spending (PCE)**  
+#### CPI vs Consumer Spending (PCE)  
   - Very strong positive relationship.
   - As inflation rose, consumer spending increased consistently — expected in nominal terms.
  
 <img width="1009" alt="Image" src="https://github.com/user-attachments/assets/a39b70a0-1acb-4f5c-9165-ccc607000bbd" />
 
-**CPI vs Investment (GPDI) and Personal Savings Rate**  
+#### CPI vs Investment (GPDI) and Personal Savings Rate  
   - Investment followed inflation closely with sharp rises, especially during expansion periods.
   - Savings rate spiked during recessions and dropping during stable periods.
   - The relationship between inflation and savings was weak compared to investment.
  
 <img width="1009" alt="Image" src="https://github.com/user-attachments/assets/a3d42ee5-d8f6-4b64-a5cb-1d9da1305b4d" />
 
-**CPI vs GDP and Federal Funds Rate**  
+#### CPI vs GDP and Federal Funds Rate  
   - GDP growth followed a steady upward path, similar to inflation.
   - No strong correlation observed between CPI and interest rates in this context either.
   - The model suggests GDP is more structurally tied to long-term inflation than interest rate shifts.
 
+<img width="1014" alt="Image" src="https://github.com/user-attachments/assets/aac1e90f-cb04-44ce-a0d9-6d8a08dae7c6" />
 
-- **Recession Zones**  
+#### Recession Zones
   - All graphs shaded the 2008 Financial Crisis and the 2020 COVID-19 Recession.
   - These periods clearly disrupted trends across all variables — especially unemployment and savings.
 
-- **Correlation Heatmap**  
+#### Correlation Heatmap 
   - CPI showed strong positive correlations with PCE and GPDI.
   - CPI had a moderate negative correlation with unemployment.
   - Most variables were positively related, especially GDP and investment.
+ 
+<img width="682" alt="Image" src="https://github.com/user-attachments/assets/c789fd88-eb07-44cd-bdfa-174d67cb6433" />
 
 ---
 
@@ -166,16 +169,22 @@ All datasets merged on date index.
 
 ### 3. ML Models
 
-- **Linear Regression**  
+#### Linear Regression  
   - Moderate performance with R² ≈ 0.40 — CPI was somewhat predictable using economic indicators.
   - Model captured trend but missed sharp fluctuations.
+ 
+<img width="888" alt="Image" src="https://github.com/user-attachments/assets/76bdd4ce-a6e1-4f6d-93e5-b15e76abbe19" />
 
-- **Random Forest Regression**  
+
+#### Random Forest Regression  
   - Poor performance (negative R²). Model failed to generalize, likely due to small test size and volatile data.
 
-- **KNN Regression**  
-  - Also failed (negative R²), indicating that macroeconomic patterns are not well-suited to local-distance models like KNN.
+<img width="890" alt="Image" src="https://github.com/user-attachments/assets/0a1715aa-d5dd-4024-a994-ddc3910dccc8" />  
 
+#### KNN Regression  
+  - Also failed (negative R²), indicating that macroeconomic patterns are not well-suited to local-distance models like KNN.
+ 
+<img width="887" alt="Image" src="https://github.com/user-attachments/assets/2191c8ff-f280-4c98-b824-ec3e32ce76bd" />
 
 ---
 
