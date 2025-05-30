@@ -112,11 +112,13 @@ All datasets merged on date index.
 
 ## Findings
 
-### EDA Graphs
+### 1. EDA Graphs
 
 - **CPI vs Federal Funds Rate**  
   - No consistent pattern observed. In some periods, interest rates rose with inflation, while in others they lagged behind.
   - The Fed’s response to inflation appears more reactive than directly proportional.
+ 
+<img width="1010" alt="Image" src="https://github.com/user-attachments/assets/5b8d2092-996c-4a18-87d8-c56daf953985" />
 
 - **CPI vs Wages (Average Hourly Earnings)**  
   - Both trends show steady increases over time.
@@ -142,7 +144,7 @@ All datasets merged on date index.
 
 ---
 
-### Hypothesis Testing
+### 2. Hypothesis Testing
 
   - Spearman correlation confirmed a significant positive relationship between CPI and both consumer spending and investment.
   - A negative correlation was found between CPI and unemployment.
@@ -150,7 +152,7 @@ All datasets merged on date index.
 
 ---
 
-### ML Models
+### 3. ML Models
 
 - **Linear Regression**  
   - Moderate performance with R² ≈ 0.40 — CPI was somewhat predictable using economic indicators.
